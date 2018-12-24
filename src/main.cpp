@@ -1745,30 +1745,15 @@ NOTE:   unlike bitcoin we are using PREVIOUS block height here,
 */
 CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params& consensusParams, bool fSuperblockPartOnly)
 {
-    if (nPrevHeight == 0) {
-        return 25000000 * COIN;
+    if (nPrevHeight == 1) {
+        return 35000000 * COIN;
     }
-    else if (nPrevHeight < 250) {
-        return 50 * COIN;
+    else if (nPrevHeight < 9600) {
+    	return 0.1 * COIN;
     }
-    else if (nPrevHeight < 100000) {
-        return 1000 * COIN;
-    }
-    else if (nPrevHeight < 300000) {
-        return 800 * COIN;
-    }
-    else if (nPrevHeight < 500000) {
-        return 600 * COIN;
-    }
-    else if (nPrevHeight < 700000) {
-        return 400 * COIN;
-    }
-    else if (nPrevHeight < 900000) {
-        return 200 * COIN;
-    }
-    else if (nPrevHeight < 1000000) {
-        return 100 * COIN;
-    }
+    else {
+    	return 10 * COIN;
+	}
 
     CAmount nSubsidy = 0 * COIN;
 
@@ -1782,29 +1767,9 @@ CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params&
 
 CAmount GetMasternodePayment(int nHeight, CAmount blockValue)
 {
-    if (nHeight < 250) {
-        return blockValue * 0.20;
-    }
-    if (nHeight < 55501) {
-        return blockValue * 0.40;
-    }
-    if (nHeight < 100001) {
-        return blockValue * 0.50;
-    }
-    if (nHeight < 200001) {
-        return blockValue * 0.5625;
-    }
-    if (nHeight < 400001) {
-        return blockValue * 0.65;
-    }
-    if (nHeight < 500001) {
-        return blockValue * 0.70;
-    }
-    if (nHeight < 700001) {
-        return blockValue * 0.65;
-    }
-    if (nHeight < 1000001) {
-        return blockValue * 0.60;
+    {
+	if (nHeight < 9600) {
+    	return blockValue * 0.01;
     }
 
     return blockValue * 0.50;
