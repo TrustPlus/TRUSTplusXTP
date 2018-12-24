@@ -1,0 +1,22 @@
+[Unit]
+Description=TRUSTplus's distributed currency daemon
+After=network.target
+
+[Service]
+User=trustpluscore
+Group=trustpluscore
+
+Type=forking
+PIDFile=/var/lib/trustplusd/trustplusd.pid
+ExecStart=/usr/bin/trustplusd -daemon -pid=/var/lib/trustplusd/trustplusd.pid \
+-conf=/etc/trustpluscore/trustplus.conf -datadir=/var/lib/trustplusd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

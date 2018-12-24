@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=TRUSTplus
+Comment=TRUSTplus P2P Cryptocurrency
+Exec=trustplus-qt %u
+Terminal=false
+Type=Application
+Icon=trustplus128
+MimeType=x-scheme-handler/trustplus;
+Categories=Office;Finance;
+Name[en_US]=trustplus-qt.desktop

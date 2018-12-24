@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/trustplus_bg.qm</file>
+        <file alias="de">locale/trustplus_de.qm</file>
+        <file alias="en">locale/trustplus_en.qm</file>
+        <file alias="es">locale/trustplus_es.qm</file>
+        <file alias="fi">locale/trustplus_fi.qm</file>
+        <file alias="fr">locale/trustplus_fr.qm</file>
+        <file alias="it">locale/trustplus_it.qm</file>
+        <file alias="ja">locale/trustplus_ja.qm</file>
+        <file alias="pl">locale/trustplus_pl.qm</file>
+        <file alias="pt">locale/trustplus_pt.qm</file>
+        <file alias="ru">locale/trustplus_ru.qm</file>
+        <file alias="sk">locale/trustplus_sk.qm</file>
+        <file alias="sv">locale/trustplus_sv.qm</file>
+        <file alias="vi">locale/trustplus_vi.qm</file>
+        <file alias="zh_CN">locale/trustplus_zh_CN.qm</file>
+        <file alias="zh_TW">locale/trustplus_zh_TW.qm</file>
+    </qresource>
+</RCC>

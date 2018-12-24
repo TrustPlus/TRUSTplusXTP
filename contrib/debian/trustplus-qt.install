@@ -1,0 +1,6 @@
+usr/local/bin/trustplus-qt usr/bin
+share/pixmaps/trustplus32.xpm usr/share/pixmaps
+share/pixmaps/trustplus16.xpm usr/share/pixmaps
+share/pixmaps/trustplus128.png usr/share/pixmaps
+debian/trustplus-qt.desktop usr/share/applications
+debian/trustplus-qt.protocol usr/share/kde4/services/

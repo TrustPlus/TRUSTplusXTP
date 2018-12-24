@@ -1,0 +1,3 @@
+debian/manpages/trustplusd.1
+debian/manpages/trustplus.conf.5
+debian/manpages/trustplus-cli.1
