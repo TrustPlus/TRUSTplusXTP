@@ -47,7 +47,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "10/8/2018 The Devs have left the building";
+    const char* pszTimestamp = "11/26/2018 Bitcoin.com US State of Ohio Accepts Bitcoin for 23 Types of Taxes";
     const CScript genesisOutputScript = CScript() << ParseHex("040a3ada5ba6280b99f49a92ba47221e6a72af844ec49d0c8bbdae1ec09a4c79b22e42eefe670ae04490556f91780eb57de76493d020c91d0c421c2fa052b28a2b") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -120,7 +120,7 @@ public:
         nMaxTipAge = 1.5 * 60 * 60; // ~36 blocks behind -> 2 x fork detection time, was 24 * 60 * 60 in bitcoin
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1533878173, 4405461, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1533878173, 781779, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
 /*
 	 //////////////
@@ -163,12 +163,11 @@ public:
                 }
                 std::cout << std::string("Finished calculating Mainnet Genesis Block:\n");
 */
-        assert(consensus.hashGenesisBlock == uint256S("0x"));
-        assert(genesis.hashMerkleRoot == uint256S("0x"));
+        assert(consensus.hashGenesisBlock == uint256S("00000003da15f8d32b34accd5e51f56cb0d6e0031b883b44e4fd71b2573e76d8"));
+        assert(genesis.hashMerkleRoot == uint256S("4d4b1d2ad15583559d68c8fbb330c7da6fc3ca062cac859e74480622d5c12002"));
         vSeeds.push_back(CDNSSeedData("seed1", "seed1.trustplus.com"));
         vSeeds.push_back(CDNSSeedData("seed2", "seed2.trustplus.com"));
-        vSeeds.push_back(CDNSSeedData("seed3", "seed3.trustpluschain.org"));
-        vSeeds.push_back(CDNSSeedData("explorer", "explorer.trustpluschain.org"));
+        vSeeds.push_back(CDNSSeedData("explorer", "explorer1.trustplus.com"));
         // TRUSTplus addresses start with 'Q'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,58);
         // TRUSTplus script addresses start with '7'
@@ -195,7 +194,7 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            ( 0, uint256S("00000b8768ec963f483fe9c9ab704d2132ce8fadff668a28835e54e570007321")),
+            ( 0, uint256S("00000003da15f8d32b34accd5e51f56cb0d6e0031b883b44e4fd71b2573e76d8")),
             1533878173, // * UNIX timestamp of last checkpoint block
             0,          // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
