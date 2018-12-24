@@ -1,4 +1,5 @@
 // Copyright (c) 2014-2018 The Proton Core developers
+// Copyright (c) 2018 The Resq Core developers
 // Copyright (c) 2018 The TRUSTplus Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -2268,7 +2269,7 @@ bool CDarkSendSigner::IsVinAssociatedWithPubkey(const CTxIn& txin, const CPubKey
     uint256 hash;
     if(GetTransaction(txin.prevout.hash, tx, Params().GetConsensus(), hash, true)) {
         BOOST_FOREACH(CTxOut out, tx.vout)
-            if(out.nValue == 300000*COIN && out.scriptPubKey == payee) return true;
+            if(out.nValue == 100000*COIN && out.scriptPubKey == payee) return true;
     }
 
     return false;
