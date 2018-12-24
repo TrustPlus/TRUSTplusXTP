@@ -86,7 +86,7 @@ public:
         consensus.BIP34Height = 227931; // FIX
         consensus.BIP34Hash = uint256S("0x000000000000024b89b42a942fe0d9fea3bb44ab7bd1b19115dd6a759c0808b8"); // FIX
         consensus.powLimit = uint256S("00000fffff000000000000000000000000000000000000000000000000000000");
-        consensus.nPowTargetTimespan = 2 * 150; // TRUSTplus: every blocks
+        consensus.nPowTargetTimespan = 2 * 45; // TRUSTplus: every blocks
         consensus.nPowTargetSpacing = 1 * 45; // TRUSTplus: 45 seconds
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
@@ -116,7 +116,7 @@ public:
         pchMessageStart[2] = 0x7c;
         pchMessageStart[3] = 0xd5;
         vAlertPubKey = ParseHex("04957a2d94e6fc0fa08f85e8a64b33cecfcb1e4bc0e29681eacca201e32e63aed8568bc3bf9143aafb3f43bcc0711f4680d80c9684f73e3112eab3847279563574");
-        nDefaultPort = 19988;
+        nDefaultPort = 37001;
         nMaxTipAge = 1.5 * 60 * 60; // ~36 blocks behind -> 2 x fork detection time, was 24 * 60 * 60 in bitcoin
         nPruneAfterHeight = 100000;
 
@@ -168,8 +168,8 @@ public:
         vSeeds.push_back(CDNSSeedData("seed1", "seed1.trustplus.com"));
         vSeeds.push_back(CDNSSeedData("seed2", "seed2.trustplus.com"));
         vSeeds.push_back(CDNSSeedData("explorer", "explorer1.trustplus.com"));
-        // TRUSTplus addresses start with 'Q'
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,58);
+        // TRUSTplus addresses start with 'T'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,66);
         // TRUSTplus script addresses start with '7'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,16);
         // TRUSTplus private keys start with 'E'
@@ -265,8 +265,8 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
 
-        // Testnet TRUSTplus addresses start with 'R'
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,61);
+        // Testnet TRUSTplus addresses start with 't'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,);
         // Testnet TRUSTplus script addresses start with '5'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,10);
         // Testnet private keys start with '5' or 'n' (Bitcoin defaults) (?)
