@@ -211,7 +211,7 @@ void CActiveMasternode::ManageStateInitial()
         return;
     }
 
-    if(pwalletMain->GetBalance() < 300000*COIN) {
+    if(pwalletMain->GetBalance() < 100000*COIN) {
         LogPrintf("CActiveMasternode::ManageStateInitial -- %s: Wallet balance is < 300 000 XTP\n", GetStateString());
         return;
     }
