@@ -266,7 +266,7 @@ public:
         vSeeds.clear();
 
         // Testnet TRUSTplus addresses start with 't'
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,128);
         // Testnet TRUSTplus script addresses start with '5'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,10);
         // Testnet private keys start with '5' or 'n' (Bitcoin defaults) (?)
