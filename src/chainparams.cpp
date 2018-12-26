@@ -116,11 +116,11 @@ public:
         pchMessageStart[2] = 0x7c;
         pchMessageStart[3] = 0xd5;
         vAlertPubKey = ParseHex("04957a2d94e6fc0fa08f85e8a64b33cecfcb1e4bc0e29681eacca201e32e63aed8568bc3bf9143aafb3f43bcc0711f4680d80c9684f73e3112eab3847279563574");
-        nDefaultPort = 37001;
+        nDefaultPort = 37002;
         nMaxTipAge = 1.5 * 60 * 60; // ~36 blocks behind -> 2 x fork detection time, was 24 * 60 * 60 in bitcoin
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1533878173, 781779, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1545787407, 3262185, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
 /*
 	 //////////////
@@ -163,8 +163,8 @@ public:
                 }
                 std::cout << std::string("Finished calculating Mainnet Genesis Block:\n");
 */
-        assert(consensus.hashGenesisBlock == uint256S("00000003da15f8d32b34accd5e51f56cb0d6e0031b883b44e4fd71b2573e76d8"));
-        assert(genesis.hashMerkleRoot == uint256S("4d4b1d2ad15583559d68c8fbb330c7da6fc3ca062cac859e74480622d5c12002"));
+        assert(consensus.hashGenesisBlock == uint256S("0x000007cab721086cb342ef169e3611e1931efc8b618df39ddc3e7082468f7080"));
+        assert(genesis.hashMerkleRoot == uint256S("0xef6087ad7d5ccd1fd1160f38958538072f928e1db37ce5e17512c83b68a48bb3"));
         vSeeds.push_back(CDNSSeedData("seed1", "seed1.trustplus.com"));
         vSeeds.push_back(CDNSSeedData("seed2", "seed2.trustplus.com"));
         vSeeds.push_back(CDNSSeedData("explorer", "explorer1.trustplus.com"));
@@ -194,8 +194,8 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            ( 0, uint256S("00000003da15f8d32b34accd5e51f56cb0d6e0031b883b44e4fd71b2573e76d8")),
-            1533878173, // * UNIX timestamp of last checkpoint block
+            ( 0, uint256S("000007cab721086cb342ef169e3611e1931efc8b618df39ddc3e7082468f7080")),
+            1545787407, // * UNIX timestamp of last checkpoint block
             0,          // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
             500	        // * estimated number of transactions per day after checkpoint
