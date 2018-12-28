@@ -1,4 +1,4 @@
-TRUSTplus Core 1.0.0
+TRUSTplus Core 1.0.1
 =====================
 
 Intro
