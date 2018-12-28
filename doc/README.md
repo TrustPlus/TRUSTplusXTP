@@ -1,4 +1,4 @@
-TRUSTplus Core 1.0.0
+TRUSTplus Core 1.0.1
 =====================
 
 This is the official reference wallet for TRUSTplus digital currency and comprises the backbone of the TRUSTplus peer-to-peer network. You can [download TRUSTplus Core](https://trustpluscoin.io) or [build it yourself](#building) using the guides below.
