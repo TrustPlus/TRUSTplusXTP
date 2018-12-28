@@ -163,10 +163,11 @@ public:
                 }
                 std::cout << std::string("Finished calculating Mainnet Genesis Block:\n");
 */
-        assert(consensus.hashGenesisBlock == uint256S("0x000007cab721086cb342ef169e3611e1931efc8b618df39ddc3e7082468f7080"));
-        assert(genesis.hashMerkleRoot == uint256S("0xef6087ad7d5ccd1fd1160f38958538072f928e1db37ce5e17512c83b68a48bb3"));
+        assert(consensus.hashGenesisBlock == uint256S("000007cab721086cb342ef169e3611e1931efc8b618df39ddc3e7082468f7080"));
+        assert(genesis.hashMerkleRoot == uint256S("ef6087ad7d5ccd1fd1160f38958538072f928e1db37ce5e17512c83b68a48bb3"));
         vSeeds.push_back(CDNSSeedData("seed1", "seed1.trustplus.com"));
         vSeeds.push_back(CDNSSeedData("seed2", "seed2.trustplus.com"));
+	vSeeds.push_back(CDNSSeedData("seed3", "seed3.trustplus.com"));
         vSeeds.push_back(CDNSSeedData("explorer", "explorer1.trustplus.com"));
         // TRUSTplus addresses start with 'T'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,66);
