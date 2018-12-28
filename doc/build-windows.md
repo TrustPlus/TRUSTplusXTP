@@ -34,7 +34,7 @@ To build executables for Windows 64-bit:
     make HOST=x86_64-w64-mingw32 -j4
     cd ..
     ./configure --prefix=`pwd`/depends/x86_64-w64-mingw32
-    make
+    make -i
 
 For further documentation on the depends system see [README.md](../depends/README.md) in the depends directory.
 
