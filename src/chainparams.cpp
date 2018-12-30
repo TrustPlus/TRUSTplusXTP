@@ -67,7 +67,7 @@ public:
     CMainParams() {
         strNetworkID = "main";
         consensus.nSubsidyHalvingInterval = 500000; // every 500,000 blocks
-        consensus.nMasternodePaymentsStartBlock = 60; // block after premine is confirmed
+        consensus.nMasternodePaymentsStartBlock = 80; // block after premine and nodes are confirmed
         consensus.nMasternodePaymentsIncreaseBlock = 158000000; // not used
         consensus.nMasternodePaymentsIncreasePeriod = 576*30; // not used
         consensus.nInstantSendKeepLock = 24;
