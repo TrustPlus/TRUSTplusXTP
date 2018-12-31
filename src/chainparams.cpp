@@ -67,7 +67,7 @@ public:
     CMainParams() {
         strNetworkID = "main";
         consensus.nSubsidyHalvingInterval = 500000; // every 500,000 blocks
-        consensus.nMasternodePaymentsStartBlock = 2; // block after premine
+        consensus.nMasternodePaymentsStartBlock = 80; // block after premine and nodes are confirmed
         consensus.nMasternodePaymentsIncreaseBlock = 158000000; // not used
         consensus.nMasternodePaymentsIncreasePeriod = 576*30; // not used
         consensus.nInstantSendKeepLock = 24;
@@ -168,6 +168,7 @@ public:
         vSeeds.push_back(CDNSSeedData("seed1", "seed1.trustplus.com"));
         vSeeds.push_back(CDNSSeedData("seed2", "seed2.trustplus.com"));
 	vSeeds.push_back(CDNSSeedData("seed3", "seed3.trustplus.com"));
+	vSeeds.push_back(CDNSSeedData("seed4", "seed4.trustplus.com"));
         vSeeds.push_back(CDNSSeedData("explorer", "explorer1.trustplus.com"));
         // TRUSTplus addresses start with 'T'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,66);
