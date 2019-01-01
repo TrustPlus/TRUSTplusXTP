@@ -169,6 +169,10 @@ public:
         vSeeds.push_back(CDNSSeedData("seed2", "seed2.trustplus.com"));
 	vSeeds.push_back(CDNSSeedData("seed3", "seed3.trustplus.com"));
 	vSeeds.push_back(CDNSSeedData("seed4", "seed4.trustplus.com"));
+	vSeeds.push_back(CDNSSeedData("seed5", "seed5.trustplus.com"));
+	vSeeds.push_back(CDNSSeedData("seed6", "seed6.trustplus.com"));
+	vSeeds.push_back(CDNSSeedData("seed7", "miner1.trustplus.com"));
+	vSeeds.push_back(CDNSSeedData("seed8", "miner2.trustplus.com"));
         vSeeds.push_back(CDNSSeedData("explorer", "explorer1.trustplus.com"));
         // TRUSTplus addresses start with 'T'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,66);
