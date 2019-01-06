@@ -6,7 +6,8 @@
 Official inital implementation of the TRUSTplus XTP core.
 
 [![Discord](https://img.shields.io/badge/discord-join%20chat-blue.svg)](https://discord.gg/56Dfku)
-![](https://img.shields.io/gitter/room/nwjs/nw.js.svg)(https://gitter.im/TRUSTplusXTP/community#)
+[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)(https://gitter.im/TRUSTplusXTP/community#)
+http://webchat.freenode.net/?channels=trustpluscoin
 
 
 
