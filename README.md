@@ -3,9 +3,9 @@
 
 Official inital implementation of the TRUSTplus XTP core.
 
-[![Discord](https://img.shields.io/badge/discord-join%20chat-blue.svg)](https://discord.gg/56Dfku)
-[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/TRUSTplusXTP/community#)
-[![IRCchat](https://img.shields.io/badge/Chat-IRCchat-brightgreen.svg)](http://webchat.freenode.net/?channels=trustpluscoin)
+[![Discord](https://img.shields.io/badge/Chat-on%20Discord-blue.svg)](https://discord.gg/56Dfku) 
+[![Slack](https://img.shields.io/badge/Chat-on%20Slack-red.svg)](https://join.slack.com/t/trustplus/shared_invite/enQtNTE3MjU1MTM2MzA4LTMwNWRjMDAxMDI1NWMwZDY0YWNjYWRhNDNjNzA3Y2VlNDkxOGM2MDkzNjc5Zjk5ZGQxZTQ0MWNiN2RiYzRhY2M) 
+[![IRCchat](https://img.shields.io/badge/Chat-on%20IRCchat-brightgreen.svg)](http://webchat.freenode.net/?channels=trustpluscoin)
 
 
 
