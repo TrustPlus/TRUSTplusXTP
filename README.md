@@ -16,12 +16,16 @@ http://webchat.freenode.net/?channels=trustpluscoin
 
 
 ## Executables
-## Running geth
+
+## Running trustplusd
+
+## Running TrustPlus-QT
 
 ### Configuration
 
-
 #### Running a private miner
+
+#### Running a masternode
 
 ## Contribution
 
