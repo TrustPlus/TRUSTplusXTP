@@ -85,7 +85,15 @@ The configuration file is inside the Unix folder ~/.trustpluscore or Windows %ap
 
 `addnode=mn1.trustplus.com`
 
-#### Running a private miner
+#### Mining
+
+Create an XTP Wallet. Setup your trustplus.conf file. Use cpuminer-opt from https://github.com/JayDDee/cpuminer-opt 
+
+Example commandline for cpuminer is:
+
+./cpuminer -a x16s -o http://127.0.0.1:37001/ -u rpcUserXX -p rpcPasswprdXX --coinbase-add=TmmDpEvmgrxxxxxxxxxxxxxxxxxxxxxxx --no-getwork --debug
+
+Coinbase address is the wallet address you would like the reward to goto. Debug is always helpful.
 
 #### Building a masternode
 
