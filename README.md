@@ -25,7 +25,7 @@ Source: https://github.com/TrustPlus/TRUSTplusXTP/blob/20896def5c5166206c818a458
 
 `sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev libboost-all-dev software-properties-common libdb4.8-dev libdb4.8++-dev libminiupnpc-dev libzmq3-dev software-properties-common -y`
 
-If you would like to create QT or the GUI interface please add this step.
+If you are making a headless server, please skip this next step.
 
 `sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler libqrencode-dev libzmq3-dev`
 
@@ -48,13 +48,48 @@ QT files are inside ~/TRUSTplusXTP/src/qt folder
 
 ## Running trustplusd
 
+It is recommended to run trustplusd or trustplus-qt in terminal with the flag -printtoconsole for Ubuntu. 
+
 ## Running TrustPlus-QT
+
+It is also recommended to use CMD for windows to run trustplusd.exe or trustplus-qt.exe with the -printtoconsole flag. 
 
 ### Configuration
 
+The configuration file is inside the Unix folder ~/.trustpluscore or Windows %appdata%/TRUSTplusCore as trustplus.conf
+
+
+`rpcuser=rpcUser`
+
+`rpcpassword=<changeMe>`
+
+`rpcport=37001`
+
+`rpcallowedip=127.0.0.1`
+
+`addnode=seed1.trustplus.com`
+
+`addnode=seed2.trustplus.com`
+
+`addnode=seed3.trustplus.com`
+
+`addnode=seed4.trustplus.com`
+
+`addnode=seed5.trustplus.com`
+
+`addnode=seed6.trustplus.com`
+
+`addnode=miner1.trustplus.com`
+
+`addnode=miner2.trustplus.com`
+
+`addnode=mn1.trustplus.com`
+
 #### Running a private miner
 
-#### Running a masternode
+#### Building a masternode
+
+We created a Wiki page here. https://github.com/TrustPlus/TRUSTplusXTP/wiki/Making-an-XTP-MasterNode-Step-by-Step Please suggest adds and comment.
 
 ## Contribution
 !! working Document !! Original Layout belongs to EthereumGo https://github.com/ethereum/go-ethereum
