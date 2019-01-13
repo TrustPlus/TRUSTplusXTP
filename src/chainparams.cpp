@@ -86,8 +86,8 @@ public:
         consensus.BIP34Height = 227931; // FIX
         consensus.BIP34Hash = uint256S("0x000000000000024b89b42a942fe0d9fea3bb44ab7bd1b19115dd6a759c0808b8"); // FIX
         consensus.powLimit = uint256S("00000fffff000000000000000000000000000000000000000000000000000000");
-        consensus.nPowTargetTimespan = 2 * 45; // TRUSTplus: every blocks
-        consensus.nPowTargetSpacing = 1 * 45; // TRUSTplus: 45 seconds
+        consensus.nPowTargetTimespan = 2 * 60; // TRUSTplus: every blocks
+        consensus.nPowTargetSpacing = 1 * 60; // TRUSTplus: 60 seconds
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016
@@ -111,7 +111,7 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0x3a;
+        pchMessageStart[0] = 0x3b;
         pchMessageStart[1] = 0xb3;
         pchMessageStart[2] = 0x7c;
         pchMessageStart[3] = 0xd5;
