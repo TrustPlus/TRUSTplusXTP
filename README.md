@@ -23,11 +23,15 @@ Source: https://github.com/TrustPlus/TRUSTplusXTP/blob/20896def5c5166206c818a458
 
 `sudo apt-get install git zip unzip -y`
 
-`sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev libboost-all-dev software-properties-common libdb4.8-dev libdb4.8++-dev libminiupnpc-dev libzmq3-dev software-properties-common -y`
+```
+sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev libboost-all-dev software-properties-common libdb4.8-dev libdb4.8++-dev libminiupnpc-dev libzmq3-dev software-properties-common -y
+```
 
 If you are making a headless server, please skip this next step.
 
-`sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler libqrencode-dev libzmq3-dev`
+```
+sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler libqrencode-dev libzmq3-dev
+```
 
 `git clone git://github.com/TrustPlus/TRUSTplusXTP`
 
@@ -58,32 +62,21 @@ It is also recommended to use CMD for windows to run trustplusd.exe or trustplus
 
 The configuration file is inside the Unix folder ~/.trustpluscore or Windows %appdata%/TRUSTplusCore as trustplus.conf
 
-
-`rpcuser=rpcUser`
-
-`rpcpassword=<changeMe>`
-
-`rpcport=37001`
-
-`rpcallowedip=127.0.0.1`
-
-`addnode=seed1.trustplus.com`
-
-`addnode=seed2.trustplus.com`
-
-`addnode=seed3.trustplus.com`
-
-`addnode=seed4.trustplus.com`
-
-`addnode=seed5.trustplus.com`
-
-`addnode=seed6.trustplus.com`
-
-`addnode=miner1.trustplus.com`
-
-`addnode=miner2.trustplus.com`
-
-`addnode=mn1.trustplus.com`
+```
+rpcuser=rpcUser
+rpcpassword=<changeMe>
+rpcport=37001
+rpcallowedip=127.0.0.1
+addnode=seed1.trustplus.com
+addnode=seed2.trustplus.com
+addnode=seed3.trustplus.com
+addnode=seed4.trustplus.com
+addnode=seed5.trustplus.com
+addnode=seed6.trustplus.com
+addnode=miner1.trustplus.com
+addnode=miner2.trustplus.com
+addnode=mn1.trustplus.com
+```
 
 #### Mining
 
@@ -108,6 +101,8 @@ MIT License
 
 Copyright (c) 2018 XTP-Chain
 
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+=======
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
