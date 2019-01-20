@@ -7,6 +7,9 @@ Official inital implementation of the TRUSTplus XTP core.
 [![Slack](https://img.shields.io/badge/Chat-on%20Slack-red.svg)](https://join.slack.com/t/trustplus/shared_invite/enQtNTE3MjU1MTM2MzA4LTMwNWRjMDAxMDI1NWMwZDY0YWNjYWRhNDNjNzA3Y2VlNDkxOGM2MDkzNjc5Zjk5ZGQxZTQ0MWNiN2RiYzRhY2M) 
 [![IRCchat](https://img.shields.io/badge/Chat-on%20IRCchat-brightgreen.svg)](http://webchat.freenode.net/?channels=trustpluscoin)
 
+## Chapter 2 of TrustPlus
+TRUSTplusXTP is a continuation of the TRUST project that was based upon a pure PoS Blockchain on the X11 algorithm.  This project stood the test of time, launching 7/4/14. Today we start XTP (X-Trust-Plus) on 2019 New Years as a PoW Blockchain on X16S algorithm with Masternodes.
+
 ## Rewards
 TrustPlusXTP is strait forward: 10 XTP per block, 50% is created for the winning masternode, halving in increments of 500,000 blocks.
 
