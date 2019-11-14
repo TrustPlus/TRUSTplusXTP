@@ -1749,17 +1749,72 @@ CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params&
         return 35000000 * COIN;
     }
     else if (nPrevHeight < 9600) {
-    	return 0.1 * COIN;
+    	nSubsidy = 0.1;
     }
-    else {
-    	return 10 * COIN;
-	}
+    // Missed Block 500000 Halving
+    else if (nPrevHeight < 600000) { 
+    	nSubsidy = 10;
+    
+    }
+    else if (nPrevHeight < 1000000) {
+    	nSubsidy = 5;
+    
+    }
+    else if (nPrevHeight < 1500000) {
+    	nSubsidy = 2.5;
+    
+    }
+    else if (nPrevHeight < 2000000) {
+    	nSubsidy = 1.25;
+	    
+    } 
+    else if (nPrevHeight < 2500000) {
+    	nSubsidy = 0.625;
+	    
+    }
+    else if (nPrevHeight < 3000000) {
+    	nSubsidy = 0.3125;
+	    
+    }
+    else if (nPrevHeight < 3500000) {
+    	nSubsidy = 0.15625;
+	    
+    }    
+    else if (nPrevHeight < 4000000) {
+    	nSubsidy = 0.08;
+	    
+    }    
+    else if (nPrevHeight < 4500000) {
+    	nSubsidy = 0.04;
+	    
+    }
+    else if (nPrevHeight < 5000000) {
+    	nSubsidy = 0.02;
+	    
+    }	
+    else if (nPrevHeight < 5500000) {
+    	nSubsidy = 0.01;
+	    
+    }
+    else if (nPrevHeight < 6000000) {
+    	nSubsidy = 0.004;
+	    
+    }
+    else if (nPrevHeight < 6500000) {
+    	nSubsidy = 0.002;
+	    
+    } else {
+	nSubsidy = 0.0001;
+    }
 
+    return nSubsidy * COIN;
+	
     CAmount nSubsidy = 0 * COIN;
 
     // yearly decline of production by 25% per 3 months.
-    for (int i = consensusParams.nSubsidyHalvingInterval; i <= nPrevHeight; i += consensusParams.nSubsidyHalvingInterval) {
+    /*    for (int i = consensusParams.nSubsidyHalvingInterval; i <= nPrevHeight; i += consensusParams.nSubsidyHalvingInterval) {
         nSubsidy -= nSubsidy * 0.25;
+    */
     }
 
     return fSuperblockPartOnly ? 0 : nSubsidy;
